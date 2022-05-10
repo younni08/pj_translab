@@ -20,7 +20,10 @@ const Home_lv1 = () => {
             </div>
             <div>
                 <div>
-                    <img src="./image1.jpg" alt="book" />
+                    <img src="./image/sample4.png" alt="book" />
+                </div>
+                <div>
+                    <img src="./image/sample5.png" alt="book" />
                 </div>
             </div>
         </div>

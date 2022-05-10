@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Topnavi = () => {
     return(
         <div className="topnavi">
             <div>
                 <div className="topnavi_left">
-                    <span>TranslateLab</span>
+                    <Link to="/">TranslateLab</Link>
                     <div>
                         <span>Service</span>
                         <span>API Review</span>
@@ -13,7 +14,7 @@ const Topnavi = () => {
                     </div>
                 </div>
                 <div className="topnavi_right">
-                    <span>Login</span>
+                    <Link to="/login">Login</Link>
                 </div>
             </div>
         </div>
