@@ -6,11 +6,14 @@ const Topnavi = () => {
         <div className="topnavi">
             <div>
                 <div className="topnavi_left">
-                    <Link to="/">TranslateLab</Link>
+                    <Link to="/">
+                        <img src="./logo.png" alt="logo" />
+                        <span>TranslateLab</span>
+                    </Link>
                     <div>
-                        <span>Service</span>
-                        <span>API Review</span>
-                        <span>Pricing</span>
+                        <Link to="/review">API Review</Link>
+                        <Link to="/pricing">Pricing</Link>
+                        <Link to="/noti">Notification</Link>
                     </div>
                 </div>
                 <div className="topnavi_right">

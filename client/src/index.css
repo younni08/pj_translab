@@ -35,19 +35,30 @@ body{
 }
 .topnavi_left > a{
   display:flex;
-  margin:0px 30px 0px 0px;
+  margin:0px 20px 0px 0px;
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
+  align-items: center;
   color:#000;
+}
+.topnavi_left > a > img{
+  overflow: hidden;
+  width:30px;
+  height:30px;
+  border-radius: 5px;
+  margin:0px 5px 0px 0px;
 }
 .topnavi_left > div{
   display:flex;
-  font-size: 0.9rem;
 }
-.topnavi_left > div > span{
+.topnavi_left > div > a{
   display:flex;
-  margin:0px 10px 0px 0px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color:#000;
+  margin:0px 5px 0px 0px;
+  padding:5px;
 }
 .topnavi_right{
   display:flex;
@@ -57,6 +68,69 @@ body{
   font-weight: bold;
   color:#2196f3;
   text-decoration: none;
+}
+/* ----------------------  login  ------------------------- */
+.pricing{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  background:#f4f4f4;
+  min-height: 100vh;
+}
+.pricing > div{
+  display:flex;
+  flex-direction: column;
+  width:1000px;
+}
+.pricing_lv1{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:200px 0px 150px 0px;
+}
+.pricing_lv1 > span:nth-child(1){
+  display:flex;
+  margin:0px 0px 10px 0px;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.pricing_lv1 > span:nth-child(2){
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#7f7f7f;
+}
+.pricing_list{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.pricing_list > div{
+  display:flex;
+  flex-direction: column;
+  width:calc(25% - 17px);
+  background:#fff;
+  padding:10px 0px;
+  border:solid 1px #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 2px 6px rgb(0 0 0 / 36%);
+}
+.pricing_list > div > span:first-child{
+  display:flex;
+  width:calc(100% - 20px);
+  padding:0px 10px;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin:10px 0px 20px 0px;
+  font-weight: bold;
+}
+.pricing_list > div > div:nth-child(2){
+  display:flex;
+  justify-content: center;
+  padding:15px 0px;
+  background:#eaeaea;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width:100%;
 }
 /* ----------------------  login  ------------------------- */
 .login{
@@ -76,6 +150,7 @@ body{
   display:flex;
   flex-direction: column;
   background:#fff;
+  align-items: flex-start;
   width:400px;
   height:500px;
   padding:50px;
@@ -83,11 +158,48 @@ body{
   border:solid 1px #eaeaea;
   border-radius: 10px;
   z-index: 10;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 3px 12px rgb(0 0 0 / 36%);
 }
-.login > div > {
-
+.login > div > div:first-child{
+  display:flex;
+  align-items: center;
+  width:100%;
 }
-
+.login > div > div:first-child > span{
+  display:flex;
+  font-size: 2rem;
+  font-weight: bold;
+  margin:0px 0px 0px 10px;
+}
+.login > div > div:first-child > div{
+  display: flex;
+  width:50px;
+  height:50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.login > div > div:first-child > div img{
+  object-fit: cover;  
+  width:100%;
+}
+.login > div > span:nth-child(2){
+  display:flex;
+  width:100%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin:30px 0px;
+  border-bottom: solid 1px #eaeaea;
+  padding:0px 0px 30px 0px;
+}
+.login > div > span:nth-child(3){
+  display:flex;
+  padding:10px 20px;
+  background:#1b6ec2;
+  border-radius: 5px;
+  font-weight: bold;
+  color:#fff;
+  cursor: pointer;
+}
 /* ----------------------  home  ------------------------- */
 .home{
   display:flex;
@@ -137,6 +249,9 @@ body{
   cursor: pointer;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
   border-radius: 10px;
+}
+.home_lv1 > div:nth-child(2) > div:first-child{
+  margin:0px 20px 0px 50px;
 }
 .home_lv1 > div:nth-child(2) > div > img{
   height:60px;
