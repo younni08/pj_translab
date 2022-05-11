@@ -30,7 +30,7 @@ const Pricing = () => {
                     <div>
                         <span>Monthly Plan</span>
                         <div>
-                            <span>10,000원</span>
+                            <span>3,000원</span>
                         </div>
                         <div>
 
@@ -39,7 +39,7 @@ const Pricing = () => {
                     <div>
                         <span>Yearly Plan</span>
                         <div>
-                            <span>100,000원</span>
+                            <span>30,000원</span>
                         </div>
                         <div>
 

@@ -5,6 +5,7 @@ import {Routes,Route,} from "react-router-dom";
 import Login from './components/login/login';
 import Notification from './components/notification/notification';
 import Pricing from './components/pricing/pricing';
+import Review from './components/review/review';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/noti" element={<Notification />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
       </div>
     </div>
