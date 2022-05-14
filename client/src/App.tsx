@@ -6,6 +6,7 @@ import Login from './components/login/login';
 import Notification from './components/notification/notification';
 import Pricing from './components/pricing/pricing';
 import Review from './components/review/review';
+import ReviewWrite from './components/review/review_write';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/noti" element={<Notification />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/revieww" element={<ReviewWrite />} />
         </Routes>
       </div>
     </div>
