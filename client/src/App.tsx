@@ -7,6 +7,7 @@ import Notification from './components/notification/notification';
 import Pricing from './components/pricing/pricing';
 import Review from './components/review/review';
 import ReviewWrite from './components/review/review_write';
+import NotificationWrite from './components/notification/notification_write';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/noti" element={<Notification />} />
+          <Route path="/notiwrite" element={<NotificationWrite />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/review" element={<Review />} />
           <Route path="/revieww" element={<ReviewWrite />} />

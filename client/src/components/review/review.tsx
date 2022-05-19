@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ReviewArticle from "./review_article";
+import ReviewSide from "./review_side";
 
 const Review = () => {
+    const [slide,setSlide] = useState(0)
+
+    const handleSlide = (max:number) => {
+        if(slide<0) return setSlide(0)
+        if(slide>max) return setSlide(0)
+        const ele = document.getElementById("review_list")
+        if(!ele) return 0
+        let distance = slide*226
+        ele.style.transform = "translateX(-"+distance.toString()+"px)"
+    }
+
+    const slideLeft = () => {
+        setSlide(c => c - 1)
+    }
+
+    const slideRight = () => {
+        setSlide(c => c + 1)
+    }
+
+    useEffect(()=>{
+        handleSlide(100)
+    },[slide])
+
     return (
         <div className="review">
             <div>
@@ -13,160 +38,21 @@ const Review = () => {
                     </div>
                 </div>
                 <div className="review_lv2">
-                    <div className="review_sum">
-                        <div className="review_sum_lv1">
-                            <span>4.8</span>
-                            <div>
-                                <span>out of</span>
-                                <span>5 Stars</span>
-                            </div>
-                        </div>
-                        <div className="review_sum_lv2">
-                            <span><i className="xi-star xi-2x"></i></span>
-                            <span><i className="xi-star xi-2x"></i></span>
-                            <span><i className="xi-star xi-2x"></i></span>
-                            <span><i className="xi-star xi-2x"></i></span>
-                            <span><i className="xi-star-o xi-2x"></i></span>
-                        </div>
-                        <div className="review_sum_lv3">
-                            <span>Overall rating of</span>
-                            <span>259</span>
-                        </div>
-                        <div className="review_sum_lv4">
-                            <Link to="/revieww">Leave Us Feedback</Link>
-                        </div>
-                        <div className="review_sum_lv5">
-                            <span><i className="xi-filter"></i></span>
-                            <span>Filter Options</span>
-                        </div>
-                        <div className="review_sum_lv6">
-                            <div>
-                                <select>
-                                    <option>English</option>
-                                    <option>한국어</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className="review_sum_lv7">
-                            <div className="temp">
-                                <div>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                </div>
-                                <span>(0)</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                </div>
-                                <span>(0)</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                </div>
-                                <span>(0)</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                </div>
-                                <span>(0)</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <span><i className="xi-star"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                    <span><i className="xi-star-o"></i></span>
-                                </div>
-                                <span>(0)</span>
-                            </div>
-
-                        </div>
-                    </div>
+                    <ReviewSide />
                     <div className="review_list">
-                        <span><i className="xi-long-arrow-left"></i></span>
-                        <div className="review_ele">
-                            <div className="review_ele_lv1">
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star-o xi-x"></i></span>
-                            </div>
-                            <div className="review_ele_lv2">
-                                <span>4.5 out of 5 Stars</span>
-                            </div>
-                            <div className="review_ele_lv3">
-                                <span>Kim k.w</span>
-                            </div>
-                            <div className="review_ele_lv4">
-                                <span>2020/05/04</span>
-                            </div>
-                            <div className="review_ele_lv5">
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                        <span onClick={slideLeft}><i className="xi-long-arrow-left"></i></span>
+                        <div>
+                            <div id="review_list">
+                                <ReviewArticle />
+                                <ReviewArticle />
+                                <ReviewArticle />
+                                <ReviewArticle />
+                                <ReviewArticle />
+                                <ReviewArticle />
+                                <ReviewArticle />
                             </div>
                         </div>
-                        <div className="review_ele">
-                            <div className="review_ele_lv1">
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star-o xi-x"></i></span>
-                            </div>
-                            <div className="review_ele_lv2">
-                                <span>4.5 out of 5 Stars</span>
-                            </div>
-                            <div className="review_ele_lv3">
-                                <span>Kim k.w</span>
-                            </div>
-                            <div className="review_ele_lv4">
-                                <span>2020/05/04</span>
-                            </div>
-                            <div className="review_ele_lv5">
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                            </div>
-                        </div>
-                        <div className="review_ele">
-                            <div className="review_ele_lv1">
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star xi-x"></i></span>
-                                <span><i className="xi-star-o xi-x"></i></span>
-                            </div>
-                            <div className="review_ele_lv2">
-                                <span>4.5 out of 5 Stars</span>
-                            </div>
-                            <div className="review_ele_lv3">
-                                <span>Kim k.w</span>
-                            </div>
-                            <div className="review_ele_lv4">
-                                <span>2020/05/04</span>
-                            </div>
-                            <div className="review_ele_lv5">
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-                            </div>
-                        </div>
-                        <span><i className="xi-long-arrow-right"></i></span>
+                        <span onClick={slideRight}><i className="xi-long-arrow-right"></i></span>
                     </div>
                 </div>
             </div>

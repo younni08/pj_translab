@@ -123,13 +123,13 @@ body{
   width:1000px;
 }
 .noti_main > div:nth-child(2n){
-  margin:0px 0px 70px 0px;
+  margin:0px 0px 80px 0px;
 }
 .noti_ele{
   display:flex;
   flex-direction: column;
   width:calc(50% - 20px);
-  margin:0px 40px 50px 0px;
+  margin:0px 40px 80px 0px;
 }
 .noti_ele > div:nth-child(1){
   display:flex;
@@ -150,8 +150,21 @@ body{
   margin:20px 0px 20px 0px;
 }
 .noti_ele > div:nth-child(3){
+  display:flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
   font-size: 1rem;
   color:#7f7f7f;
+  /* background:#f4f4f4; */
+  /* padding:2px 5px; */
+}
+.noti_ele > div:nth-child(3)::-webkit-scrollbar { width: 3px; }
+.noti_ele > div:nth-child(3)::-webkit-scrollbar-track { background-color: #f0f0f0; }
+.noti_ele > div:nth-child(3)::-webkit-scrollbar-thumb { 
+    background: #adadad; 
 }
 .noti_ele > div:nth-child(4){
   display: flex;
@@ -183,6 +196,32 @@ body{
 .noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(2){
   font-size: 0.9rem;
   color:#7f7f7f;
+}
+/* ----------------------  review  ------------------------- */
+.noti_write{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  background:#f6f6f6;
+  min-height: 100vh;
+}
+.noti_write > div{
+  display:flex;
+  flex-direction: column;
+  margin:100px 0px;
+  align-items: center;
+}
+.noti_write_ele{
+  display:flex;
+  flex-direction: column;
+  width:500px;
+  padding:20px;
+  background:#fff;
+  border:solid 1px #eaeaea;
+  height:500px;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2); */
+
 }
 /* ----------------------  review  ------------------------- */
 .review{
@@ -380,10 +419,21 @@ body{
   justify-content: center;
   align-items: center;
   width:40px;
-  height:40px;
+  height:35px;
   border-radius: 25px;
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
   cursor: pointer;
+}
+.review_list > div{
+  display:flex;
+  width:calc(100% - 40px);
+  overflow:hidden;
+  margin:0px 20px;
+}
+.review_list > div > div{
+  display:flex;
+  width:100%;
+  transition:all 0.3s;
 }
 .review_ele{
   display:flex;
@@ -391,8 +441,13 @@ body{
   align-items: center;
   border:solid 1px #dbdbdb;
   height:500px;
-  width:200px;
+  /* min-width:calc(33.3% - 12px); */
+  min-width:204px;
+  margin:0px 20px 0px 0px;
 }
+/* .review_ele:nth-child(3n){
+  margin:0px 0px 0px 0px;
+} */
 .review_ele_lv1{
   display: flex;
   width:100%;
@@ -455,6 +510,9 @@ body{
   margin:0px 0px 20px 0px;
   color:#ffa534;
 }
+.review_write_rate > span{
+  cursor: pointer;
+}
 .review_write_title{
   display:flex;
   flex-direction: column;
@@ -470,7 +528,7 @@ body{
   flex-direction: column;
   margin:0px 0px 10px 0px;
 }
-.review_write_title > div > span{
+.review_write_title > div > label{
   display:flex;
   margin:0px 0px 5px 0px;
   font-weight: bold;
