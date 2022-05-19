@@ -11,7 +11,7 @@ const Review = () => {
         if(slide>max) return setSlide(0)
         const ele = document.getElementById("review_list")
         if(!ele) return 0
-        let distance = slide*226
+        let distance = slide*224
         ele.style.transform = "translateX(-"+distance.toString()+"px)"
     }
 

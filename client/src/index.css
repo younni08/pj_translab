@@ -442,7 +442,7 @@ body{
   border:solid 1px #dbdbdb;
   height:500px;
   /* min-width:calc(33.3% - 12px); */
-  min-width:204px;
+  min-width:202px;
   margin:0px 20px 0px 0px;
 }
 /* .review_ele:nth-child(3n){
