@@ -1,0 +1,127 @@
+@media (min-width: 200px) and (max-width: 530px) {
+.topnavi > div{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+}
+.topnavi_left{
+    width:100%;
+}
+.topnavi_left > div{
+    justify-content: center;
+    width:100%;
+}
+.topnavi_left > a{
+    margin:0px;
+}
+.topnavi_left > a > span{
+    display:none
+}
+.topnavi_left > div > a{
+    font-size: 0.8rem;
+}
+/* ----------------------  login  ------------------------- */
+.login > div{
+    width:calc(100% - 82px);
+    padding:20px;
+    margin:5vh 20px;
+}
+.login > div > div:first-child > div{
+    width:40px;
+    height:40px;
+}
+.login > div > div:first-child > span{
+    font-size: 1.5rem;
+}
+.login > div > span:nth-child(2){
+    font-size: 1.5rem;
+}
+/* ----------------------  review  ------------------------- */
+.noti{
+    overflow: hidden;
+}
+.noti_lv1{
+    height:30vh;
+}
+.noti_lv1 > img{
+    height: 100%;
+    opacity:0.8;
+}
+.noti_main{
+    flex-direction: column;
+    width:100%;
+    flex-wrap: nowrap;
+    margin:20px 0px;
+}
+.noti_main > div:nth-child(2n){
+    margin:0px 0px 50px 0px;
+  }
+.noti_ele{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+    margin:0px 0px 50px 0px;
+}
+.noti_ele > div:nth-child(1) > img{
+    height:100%;
+}
+.noti_ele > div:nth-child(2){
+    margin:10px 0px;
+}
+.noti_ele > div:nth-child(3){
+    font-size: 0.9rem;
+}
+.noti_ele > div:nth-child(4) > div:nth-child(1){
+    width:35px;
+    height:35px;
+}
+.noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(1){
+    font-size: 0.9rem;
+}
+.noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(2){
+    font-size: 0.8rem;
+}
+/* ----------------------  review  ------------------------- */
+
+/* ----------------------  review  ------------------------- */
+.review{
+    overflow: hidden;
+}
+.review_lv1{
+    height:30vh;
+}
+.review_lv1 > img{
+    height:100%;
+}
+.review_lv1 > div:nth-child(2) > span:nth-child(1){
+    font-size: 2rem;
+}
+.review_lv1 > div:nth-child(2) > span:nth-child(2){
+    font-size: 0.8rem;
+}
+.review_lv2{
+    width:100%;
+    flex-direction: column;
+    margin:20px 0px;
+}
+.review_sum{
+    width:100%;
+    height:auto;
+    align-items: center;
+}
+.review_sum > div:nth-child(2){
+    display:none;
+}
+.review_list{
+    height: auto;
+    width:calc(100% - 20px);
+    padding:0px 10px;
+    margin:50px 0px;
+}
+.review_write_wrapper{
+    width:100%;
+    margin:30px 0px 0px 0px;
+}
+.review_write{
+    width:calc(100% - 40px);
+    margin:0px 20px;
+}
+}
