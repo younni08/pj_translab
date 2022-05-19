@@ -79,8 +79,23 @@
 .noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(2){
     font-size: 0.8rem;
 }
-/* ----------------------  review  ------------------------- */
-
+/* ----------------------  home  ------------------------- */
+.pricing_list{
+    width:calc(100% - 40px);
+    padding:0px 20px;
+    flex-direction: column;
+    margin:20px 0px 0px 0px;
+}
+.pricing_list > div{
+    width:100%;
+    margin:0px 0px 20px 0px;
+}
+.pricing_info{
+    width:calc(100% - 40px);
+    padding:0px 20px;
+    margin:0px;
+    font-size: 0.8rem;
+}
 /* ----------------------  review  ------------------------- */
 .review{
     overflow: hidden;

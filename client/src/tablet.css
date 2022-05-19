@@ -1,0 +1,47 @@
+@media (min-width: 530px) and (max-width: 1000px) {
+.topnavi > div{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+}
+.review_lv2{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+}
+.review_list{
+    overflow: hidden;
+    width:calc(100% - 20px);
+    padding:0px 10px;
+    height:auto;
+}
+.noti_ele > div:nth-child(1) > img{
+    height:100%;
+}
+.noti_ele{
+    margin:0px 20px 80px 0px;
+    width:calc(50% - 10px);
+}
+.pricing_list{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+}
+.pricing_info{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+    font-size: 1rem;
+    margin:30px 0px 0px 0px;
+}
+.noti_lv1 > img{
+    height:100%;
+    opacity: 0.8;
+}
+.noti_main{
+    width:calc(100% - 20px);
+    padding:0px 10px;
+}
+.topnavi_left > div > a{
+    font-size: 1rem;
+}
+.topnavi_right > a{
+    font-size: 1rem;
+}
+}
