@@ -11,7 +11,16 @@ const Home_lv5 = () => {
                 </div>
                 <div>
                     <div>
-                        <img src="./imagelist.jpg" alt="iphone" />
+                        <img src="./edit.png" alt="iphone" />
+                    </div>
+                    <div>
+                        <div>
+                            <span>번역 결과, 글씨 사이즈 번역물 각도, 색상 등 다양한</span>
+                            <span>항목을 수정할 수 있어요.</span>
+                        </div>
+                        <div>
+                            <img src="./1.jpg" alt="comic" />
+                        </div>
                     </div>
                 </div>
             </div>
