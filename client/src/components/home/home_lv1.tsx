@@ -6,8 +6,11 @@ const Home_lv1 = () => {
             <div>
                 <span>어려운 번역 작업,</span>
                 <div>
-                    <span>TranslateLab</span>
-                    <span>에서 간편하게</span>
+                    <span className="pc">TranslateLab</span>
+                    <span className="pc">에서 간편하게</span>
+                    <span className="mobile">TranslateLab</span>
+                    <span className="mobile">에서</span>
+                    <span className="mobile">간편하게</span>
                 </div>
             </div>
             <div>

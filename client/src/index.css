@@ -772,6 +772,9 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.home_lv1 > div:nth-child(1) > div > span.mobile{
+  display:none;
+}
 .home_lv1 > div:nth-child(2){
   display: flex;
   justify-content: center;
@@ -1999,7 +2002,8 @@ body{
   flex-direction: column;
   width:calc(60% - 82px);
   padding:30px;
-  background: linear-gradient(rgb(232, 243, 255) 0%, rgba(173,222,200,0.4) 100%);
+  background: linear-gradient(rgb(206, 237, 255) 0%, rgb(177, 208, 255) 100%);
+  /* background: linear-gradient(rgb(228, 245, 255) 0%, rgb(205, 225, 255) 100%); */
   border-radius: 10px;
   font-size: 1.3rem;
   color:#7f7f7f;
