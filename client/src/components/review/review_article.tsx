@@ -19,6 +19,16 @@ const ReviewArticle = () => {
             <div className="review_ele_lv4">
                 <span>2020/05/04</span>
             </div>
+            <div className="review_ele_lv7">
+                <div>
+                    <span><i className="xi-eye-o xi-x"></i></span>
+                    <span>google</span>
+                </div>
+                <div>
+                    <span><i className="xi-translate xi-x"></i></span>
+                    <span>papago</span>
+                </div>
+            </div>
             <div className="review_ele_lv5">
                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
             </div>

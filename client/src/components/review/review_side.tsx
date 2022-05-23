@@ -41,6 +41,26 @@ const ReviewSide = () => {
                         </select>
                     </div>
                 </div>
+                <div className="review_sum_lv6">
+                    <div>
+                        <select>
+                            <option>OCR Options</option>
+                            <option>mlkit</option>
+                            <option>googlevision</option>
+                            <option>clovaocr</option>
+                        </select>
+                    </div>
+                </div>
+                <div className="review_sum_lv6">
+                    <div>
+                        <select>
+                            <option>번역 엔진</option>
+                            <option>mlkit</option>
+                            <option>googletranslate</option>
+                            <option>papago</option>
+                        </select>
+                    </div>
+                </div>
                 <div className="review_sum_lv7">
                     {/* 5 스타 */}
                     <div>

@@ -495,6 +495,31 @@ body{
   margin:20px 0px 0px 0px;
   font-size: 0.9rem;
 }
+.review_ele_lv7{
+  display:flex;
+  margin:20px 0px 0px 0px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+.review_ele_lv7 > div{
+  display:flex;
+  align-items: center;
+}
+.review_ele_lv7 > div > span:first-child{
+  color:#2196f3;
+  display:flex;
+  margin:0px 5px 0px 10px;
+}
+.review_ele_lv7 > div:first-child > span:first-child{
+  margin:0px 5px 0px 0px;
+}
+.review_ele_lv7 > div > span:last-child{
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color:#7f7f7f;
+}
 /* ----------------------  review write  ------------------------- */
 .review_write_wrapper{
   display:flex;
