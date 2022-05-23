@@ -96,7 +96,7 @@ body{
   width:100%;
   justify-content: center;
   align-items: center;
-  height:400px;
+  height:350px;
   position:relative;
   overflow: hidden;
 }
@@ -104,7 +104,7 @@ body{
   object-fit: cover;
   width:100%;
   position:absolute;
-  opacity:0.65;
+  opacity:0.75;
 }
 .noti_lv1 > div:nth-child(2){
   display:none;
@@ -1112,160 +1112,6 @@ body{
   color:#2196f3;
   text-decoration: none;
 }
-/* ----------------------  noti  ------------------------- */
-.noti{
-  display:flex;
-  width:100%;
-  justify-content: center;
-}
-.noti > div{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-}
-.noti_lv1{
-  display:flex;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  height:400px;
-  position:relative;
-  overflow: hidden;
-}
-.noti_lv1 > img{
-  object-fit: cover;
-  width:100%;
-  position:absolute;
-  opacity:0.65;
-}
-.noti_lv1 > div:nth-child(2){
-  display:none;
-  flex-direction: column;
-  color:		#585858;
-  background:linear-gradient(to top, rgb(255,231,0), rgb(253,251,118));;
-  padding:10px 30px;
-  border-radius: 20px;
-  align-items: center;
-  z-index: 10;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 3px 12px rgb(0 0 0 / 36%);
-  position: relative;
-}
-.noti_lv1 > div:nth-child(2) > span:nth-child(1){
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-.noti_lv1 > div:nth-child(2) > span:nth-child(2){
-  display:flex;
-  margin:0px 0px 10px 0px;
-}
-.noti_main{
-  display:flex;
-  flex-wrap: wrap;
-  margin:50px 0px;
-  width:1000px;
-}
-.noti_main > div:nth-child(2n){
-  margin:0px 0px 80px 0px;
-}
-.noti_ele{
-  display:flex;
-  flex-direction: column;
-  width:calc(50% - 20px);
-  margin:0px 40px 80px 0px;
-}
-.noti_ele > div:nth-child(1){
-  display:flex;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  height:200px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.noti_ele > div:nth-child(1) > img{
-  object-fit: cover;
-  width:100%;
-}
-.noti_ele > div:nth-child(2){
-  font-weight: bold;
-  font-size: 2rem;
-  margin:20px 0px 20px 0px;
-}
-.noti_ele > div:nth-child(3){
-  display:flex;
-  flex-direction: column;
-  max-height: 200px;
-  overflow: hidden;
-  overflow-y: scroll;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  color:#7f7f7f;
-  /* background:#f4f4f4; */
-  /* padding:2px 5px; */
-}
-.noti_ele > div:nth-child(3)::-webkit-scrollbar { width: 3px; }
-.noti_ele > div:nth-child(3)::-webkit-scrollbar-track { background-color: #f0f0f0; }
-.noti_ele > div:nth-child(3)::-webkit-scrollbar-thumb { 
-    background: #adadad; 
-}
-.noti_ele > div:nth-child(4){
-  display: flex;
-  font-size: 1rem;
-  margin:20px 0px 0px 0px;
-}
-.noti_ele > div:nth-child(4) > div:nth-child(1){
-  display:flex;
-  width:40px;
-  height:40px;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.noti_ele > div:nth-child(4) > div:nth-child(1) > img{
-  object-fit: cover;
-  width:100%;
-}
-.noti_ele > div:nth-child(4) > div:nth-child(2){
-  display:flex;
-  flex-direction: column;
-  margin:0px 0px 0px 10px;
-}
-.noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(1){
-  font-size: 1rem;
-  font-weight: bold;
-}
-.noti_ele > div:nth-child(4) > div:nth-child(2) > span:nth-child(2){
-  font-size: 0.9rem;
-  color:#7f7f7f;
-}
-/* ----------------------  review  ------------------------- */
-.noti_write{
-  display:flex;
-  width:100%;
-  justify-content: center;
-  background:#f6f6f6;
-  min-height: 100vh;
-}
-.noti_write > div{
-  display:flex;
-  flex-direction: column;
-  margin:100px 0px;
-  align-items: center;
-}
-.noti_write_ele{
-  display:flex;
-  flex-direction: column;
-  width:500px;
-  padding:20px;
-  background:#fff;
-  border:solid 1px #eaeaea;
-  height:500px;
-  border-radius: 5px;
-  /* box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2); */
-
-}
 /* ----------------------  review  ------------------------- */
 .review{
   display:flex;
@@ -1284,7 +1130,7 @@ body{
   width:100%;
   justify-content: center;
   align-items: center;
-  height:400px;
+  height:350px;
   position:relative;
   overflow: hidden;
 }
