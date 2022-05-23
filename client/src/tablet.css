@@ -44,4 +44,25 @@
 .topnavi_right > a{
     font-size: 1rem;
 }
+.Home_lv3 > div{
+    width:calc(100% - 60px);
+    padding:0px 30px;
+}
+.home_lv3_left > div:nth-child(2){
+    height: 470px;
+}
+.Home_lv4 > div{
+    width:calc(100% - 60px);
+    padding:0px 30px;
+}
+.Home_lv4 > div > div:nth-child(3) > div{
+    height: auto;
+}
+.Home_lv5 > div{
+    width:calc(100% - 60px);
+    padding:0px 30px;
+}
+.Home_lv5 > div > div:nth-child(3) > div:nth-child(2) > div:last-child{
+    height: 240px;
+}
 }

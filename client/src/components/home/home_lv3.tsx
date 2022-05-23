@@ -1,13 +1,20 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 
 const Home_lv3 = () => {
     return (
         <div className="Home_lv3">
             <div>
-                <span>화면 번역</span>
+                <Fade bottom>
+                    <span>화면 번역</span>
+                </Fade>
                 <div>
-                    <span>이미지 다운로드 없이</span>
-                    <span>내 화면을 즉시 번역</span>
+                    <Fade bottom>
+                        <span>이미지 다운로드 없이</span>
+                    </Fade>
+                    <Fade bottom>
+                        <span>내 화면을 즉시 번역</span>
+                    </Fade>
                 </div>
                 <div>
                     <div className="home_lv3_left">
@@ -18,23 +25,37 @@ const Home_lv3 = () => {
                         </div>
                         <div>
                             <div>
-                                <img src="./logo.png" alt="logo" />
+                                <Fade bottom>
+                                    <img src="./logo.png" alt="logo" />
+                                </Fade>
                             </div>
                             <div>
                                 <span><i className="xi-renew xi-3x"></i></span>
                             </div>
                             <div>
-                                <span>만화</span>
-                                <span>소설</span>
-                                <span>커뮤니티</span>
-                                <span>쇼핑몰</span>
-                                <span>인터넷</span>
+                                <Fade bottom>
+                                    <span>만화</span>
+                                </Fade>
+                                <Fade bottom>
+                                    <span>소설</span>
+                                </Fade>
+                                <Fade bottom>
+                                    <span>커뮤니티</span>
+                                </Fade>
+                                <Fade bottom>
+                                    <span>쇼핑몰</span>
+                                </Fade>
+                                <Fade bottom>
+                                    <span>인터넷</span>
+                                </Fade>
                             </div>
                         </div>
                     </div>
-                    <div className="home_lv3_right">
-                        <img src="./iphone2.png" alt="book" />
-                    </div>
+                    <Fade right >
+                        <div className="home_lv3_right">
+                            <img src="./iphone2.png" alt="book" />
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>

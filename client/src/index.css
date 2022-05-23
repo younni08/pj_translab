@@ -69,6 +69,16 @@ body{
   color:#2196f3;
   text-decoration: none;
 }
+.foot{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  padding:50px 0px;
+  background:#c6e2ff;
+  font-weight: bold;
+  color:#7f7f7f;
+  font-size: 0.9rem;
+}
 /* ----------------------  noti  ------------------------- */
 .noti{
   display:flex;

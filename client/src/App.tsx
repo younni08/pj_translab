@@ -8,6 +8,7 @@ import Pricing from './components/pricing/pricing';
 import Review from './components/review/review';
 import ReviewWrite from './components/review/review_write';
 import NotificationWrite from './components/notification/notification_write';
+import Foot from './components/common/foot';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/review" element={<Review />} />
           <Route path="/revieww" element={<ReviewWrite />} />
         </Routes>
+        <Foot />
       </div>
     </div>
   );

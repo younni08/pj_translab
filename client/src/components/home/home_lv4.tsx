@@ -1,19 +1,28 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 
 const Home_lv4 = () => {
     return (
         <div className="Home_lv4">
             <div>
-                <span>이미지 번역</span>
+                <Fade bottom>
+                    <span>이미지 번역</span>
+                </Fade>
                 <div>
-                    <span>가지고 있는 이미지를</span>
-                    <span>손쉽게 한번에 번역하세요</span>
+                    <Fade bottom>
+                        <span>가지고 있는 이미지를</span>
+                    </Fade>
+                    <Fade bottom>
+                        <span>손쉽게 한번에 번역하세요</span>
+                    </Fade>
                 </div>
-                <div>
+                <Fade bottom>
                     <div>
-                        <img src="./imagelist.jpg" alt="iphone" />
+                        <div>
+                            <img src="./imagelist.jpg" alt="iphone" />
+                        </div>
                     </div>
-                </div>
+                </Fade>
             </div>
         </div>
     )
