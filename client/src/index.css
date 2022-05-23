@@ -574,7 +574,14 @@ body{
   border:none;
   font-size: 1rem;
 }
+.review_write_title > div > select{
+  border:none;
+  font-size: 1rem;
+}
 .review_write_title > div > input:focus{
+  outline: none;
+}
+.review_write_title > div > select:focus{
   outline: none;
 }
 .review_write_text{

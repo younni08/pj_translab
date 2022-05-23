@@ -76,6 +76,24 @@ const ReviewWrite = () => {
                                     <input id="review_write_name" onChange={handleName} />
                                 </div>
                             </div>
+                            <div className="review_write_title">
+                                <div>
+                                    <label htmlFor="review_write_name">OCR</label>
+                                    <select>
+                                        <option>mlkit</option>
+                                        <option>googlevision, </option>
+                                        <option>clovaocr</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label htmlFor="review_write_name">번역 엔진</label>
+                                    <select>
+                                        <option>mlkit</option>
+                                        <option>googletranslate</option>
+                                        <option>papago</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div className="review_write_text">
                                 <textarea onChange={handleText} />
                             </div>

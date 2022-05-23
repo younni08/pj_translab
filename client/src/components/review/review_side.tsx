@@ -33,14 +33,14 @@ const ReviewSide = () => {
                     <span><i className="xi-filter"></i></span>
                     <span>Filter Options</span>
                 </div>
-                <div className="review_sum_lv6">
+                {/* <div className="review_sum_lv6">
                     <div>
                         <select>
                             <option>English</option>
                             <option>한국어</option>
                         </select>
                     </div>
-                </div>
+                </div> */}
                 <div className="review_sum_lv6">
                     <div>
                         <select>
